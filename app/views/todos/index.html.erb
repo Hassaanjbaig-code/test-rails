@@ -1,0 +1,11 @@
+<h1>Todos#index</h1>
+<p>Find me in app/views/todos/index.html.erb</p>
+
+<ul>
+<% @todos.each do | todo | %>
+    <li>
+       <h3><%= todo.task %><h3/>
+       <input type="checkbox" <%= 'checked' if todo.complete == true %> />
+    </li>
+<% end %>
+</ul>
